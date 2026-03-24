@@ -63,9 +63,9 @@ public class Ex04 {
         int n = 64;
         
         long tempoInicial = System.nanoTime();
-        long tempoFinal = System.nanoTime();
         
         System.out.println(MULTIPLY(x, y, n));
+        long tempoFinal = System.nanoTime();
         System.out.println("tempo gasto: " + (tempoFinal-tempoInicial));
         System.out.println("n interacoes: " + iteracoes);
         
