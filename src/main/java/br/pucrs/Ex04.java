@@ -45,7 +45,7 @@ public class Ex04 {
             return x*y;
         }
         
-        int m = n/2;
+        int m = (int) Math.ceil(n/2);
         long mathpow2m = (long) Math.pow(2, m);
         
         long a = x / mathpow2m;
@@ -81,7 +81,7 @@ public class Ex04 {
         
         Ex05(15L, 15L, 4);
         Ex05(65535L, 65535L, 16);
-        Ex05(268435455L, 268435455L, 64);
+        Ex05(1099511627775L, 1099511627775L, 64);
         
     }
 }
