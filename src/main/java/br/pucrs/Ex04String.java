@@ -58,7 +58,7 @@ public class Ex04String {
         return (long) Math.pow(2, 2*m) * e + mathpow2m * (g + h) + f;
     }
     
-    public static void Ex05(String x, String y){
+    public static void Ex05(String x, String y, int n){
         iteracoes = 0;
         
         long tempoInicial = System.nanoTime();
@@ -67,18 +67,19 @@ public class Ex04String {
         
         long tempoFinal = System.nanoTime();
         
-        System.out.println("x: " + x + " | y: " + y);
-        System.out.println("resultado: " + resultado);
-        System.out.println("tempo gasto: " + (tempoFinal-tempoInicial));
-        System.out.println("n interacoes: " + iteracoes);
+        System.out.println(n + " bits");
+        //System.out.println("x: " + x + " | y: " + y);
+        //System.out.println("resultado: " + resultado);
+        System.out.println("tempo: " + (tempoFinal-tempoInicial) + " ns");
+        System.out.println("n. interacoes: " + iteracoes);
         System.out.println("---------------");
     }
     
     public static void main(String[] args) {
         
-        Ex05("1111", "1111");
-        Ex05("1111111111111111", "1111111111111111");
-        Ex05("10110101000001001111001100110011", "10110101000001001111001100110011");
+        Ex05("1111", "1111", 4);
+        Ex05("1111111111111111", "1111111111111111", 16);
+        Ex05("1111111111111111111111111111111111111111111111111111111111111111", "1111111111111111111111111111111111111111111111111111111111111111", 64);
         
     }
 }

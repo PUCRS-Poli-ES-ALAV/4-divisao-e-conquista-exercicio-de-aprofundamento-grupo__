@@ -70,10 +70,11 @@ public class Ex04 {
         
         long tempoFinal = System.nanoTime();
         
-        System.out.println(n + " bits, x: " + x + " | y: " + y);
-        System.out.println("resultado: " + resultado);
-        System.out.println("tempo gasto: " + (tempoFinal-tempoInicial));
-        System.out.println("n interacoes: " + iteracoes);
+        System.out.println(n + " bits");
+        //System.out.println(n + " bits, x: " + x + " | y: " + y);
+        //System.out.println("resultado: " + resultado);
+        System.out.println("tempo: " + (tempoFinal-tempoInicial) + " ns");
+        System.out.println("n. interacoes: " + iteracoes);
         System.out.println("---------------");
     }
     
